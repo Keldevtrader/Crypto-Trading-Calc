@@ -44,11 +44,11 @@ st.title("Investment Scenarios Calculator")
 # Collect inputs
 total_investment = st.number_input("Total Investment", value=10000.0)
 purchase_price = st.number_input("Purchase Price per Share", value=100.0)
-commission_percent = st.number_input("Commission Percentage", value=0.25)
-tp1_price = st.number_input("Take Profit 1 (TP1) Price", value=200.0)
+commission_percent = st.number_input("Commission Percentage (%)", value=0.25)
+tp1_price = st.number_input("TP1 Price per Share", value=200.0)
 amount_taken_tp1 = st.number_input("Amount Taken Out at TP1", value=5000.0)
-sl_tp2_price = st.number_input("Stop Loss / TP2 Price", value=220.0)
-initial_sl_price = st.number_input("Initial Stop Loss (SL) Price", value=45.0)
+sl_tp2_price = st.number_input("TP2 Price per Share", value=220.0)
+initial_sl_price = st.number_input("Initial SL Price per Share", value=45.0)
 
 # Calculate when button is pressed
 if st.button("Calculate"):
